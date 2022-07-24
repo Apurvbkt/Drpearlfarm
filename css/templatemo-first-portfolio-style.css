@@ -469,12 +469,10 @@ strong {
   padding-bottom: 330px;
 }
 
-@media  screen and (min-width: 991px) {
-  .hero {
-    height: 60vh;
-  }
+/* @media  screen and (min-width: 991px) {
+ 
 
-}
+} */
 
 .hero-title,
 .hero h2 {
@@ -608,6 +606,25 @@ strong {
 /*---------------------------------------
   CLIENTS              
 -----------------------------------------*/
+.clients-item-height {
+	height: 120px;
+  /* border: 1px solid red; */
+  margin: auto;
+  margin: 30px;
+}
+
+.clients-image {
+  display: block;
+  height: 70%;
+  max-width: 100px;
+  margin: auto;
+  transition: all ease 0.2s;
+}
+
+.clients-image:hover {
+  transform: scale(1.3);
+}
+
 
 /*---------------------------------------
  NOTHING TO SHOW ON CLIENTS              
@@ -931,6 +948,9 @@ strong {
 -----------------------------------------*/
 @media screen and (min-width: 991px) {
   .hero {
+    height: 60vh;
+  }
+  .hero {
     padding-top: 380px;
     padding-bottom: 380px;
   }
@@ -962,7 +982,7 @@ strong {
   /* mine */
   .intro{ 
 
-    margin-top: 30px;
+    margin-top: 80px;
   }
   
   .intro-3{
@@ -1336,7 +1356,7 @@ strong {
   .lft-cnt{
     border: 1px solid transparent;
     line-height: 20px;
-    /* text-align: left; */
+    text-align: left;
   text-align: center;
     margin-top: 29px;
   
@@ -1366,5 +1386,84 @@ strong {
 
 
 
-                          /* mine */
 
+
+    /* mine */
+
+    @media screen and  (max-width: 387px) {
+      h1 {
+        font-size: 40px;
+      }
+    
+      h2 {
+        font-size: 28px;
+      }
+    
+      h3 {
+        font-size: 26px;
+      }
+    
+      h4 {
+        font-size: 22px;
+      }
+    
+      h5 {
+        font-size: 20px;
+      }
+    
+      .custom-btn,
+      .navbar .custom-btn {
+        font-size: 11px;
+        padding: 3px 12px;
+      }
+    
+      .navbar-icon {
+        font-size: var(--copyright-font-size);
+        width: 35.5px;
+        height: 35.5px;
+        line-height: 35.5px;
+      }
+    
+      .hero-image-wrap {
+        width: 350px;
+        height: 350px;
+      }
+    
+      .hero-image {
+        min-width: inherit;
+      }
+    
+      /* mine */
+      .lft-cnt{
+        /* border: 1px solid red; */
+
+        line-height: 20px;
+        text-align: left;
+      text-align: center;
+        margin-top: 29px;
+      
+      }
+      .intro-3{
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+        /* border: 1px solid red; */
+        
+        /* flex-wrap: wrap; */
+        width: 100%;
+        overflow: scroll;
+        justify-content: center;
+      }
+      .intro-3> div{
+        /* border: 1px solid rgb(72, 255, 0); */
+        display: flex;
+          width: 90%; 
+          margin: 5px;
+          height: 300px;
+        /* flex-wrap: wrap; */
+      }
+      .navbar-brand{
+        /* border: 1px solid red;  */
+        font-size: 28px;
+      }
+      
+    }
+    
